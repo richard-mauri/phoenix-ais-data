@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "vessel": {
+    "name": "PHOENIX DO MAR",
+    "mmsi": "368448560",
+    "callsign": "WDQ6966",
+    "flag": "US"
+  },
+  "track_points": [],
+  "observations_without_coordinates": [
+    {"observed_at_utc_estimated":"2026-10-05T06:12:18Z","notification_sent_at_utc":"2026-10-05T06:13:18Z","report_age_minutes_at_notification":1,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: AIS update confirms Phoenix Do Mar identity and position"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T11:50:58Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New AIS position confirmed for Phoenix Do Mar"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T07:47:55Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New AIS position for Phoenix Do Mar"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T02:45:07Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position reported"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T03:40:03Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position update"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-04T21:49:26Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"public AIS sources","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS identity verified with fresh position"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T08:34:17Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS update verified"},
+    {"observed_at_utc_estimated":"2026-10-04T15:47:00Z","notification_sent_at_utc":null,"report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":5.3,"cog_deg":209.9,"source":"PredictWind Phoenix Do Mar tracker","position_quality":"public tracker observation; exact timestamp/speed/course, coordinates not exposed in indexed result"},
+    {"observed_at_utc_estimated":null,"notification_sent_at_utc":null,"report_age_minutes_at_notification":40,"lat":null,"lon":null,"sog_kn":5.1,"cog_deg":172.0,"source":"976-TUNA AIS","position_quality":"current public AIS observation; relative timestamp only, coordinates not exposed in indexed result"}
+  ],
+  "notes": [
+    "track_points intentionally contains no fabricated coordinates.",
+    "The seven ChatGPT notification emails provide report age/speed but not latitude/longitude.",
+    "Public indexed sources verified the vessel identity; currently accessible search results did not expose Oct 4-5 coordinate history.",
+    "Future collection should require observed_at_utc, lat, lon, and source before adding an item to track_points."
+  ]
+}
