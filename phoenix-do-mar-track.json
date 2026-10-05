@@ -6,17 +6,605 @@
     "callsign": "WDQ6966",
     "flag": "US"
   },
-  "track_points": [],
+  "track_points": [
+    {
+      "observed_at_utc": "2026-10-04T18:22:48Z",
+      "lat": 46.64500666666667,
+      "lon": -125.88881833333333,
+      "sog_kn": 4.8,
+      "cog_deg": 214.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T18:46:48Z",
+      "lat": 46.620916666666666,
+      "lon": -125.91413333333334,
+      "sog_kn": 4.3,
+      "cog_deg": 191.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T18:56:48Z",
+      "lat": 46.61014,
+      "lon": -125.91547333333334,
+      "sog_kn": 4.2,
+      "cog_deg": 173.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T19:00:48Z",
+      "lat": 46.60601666666667,
+      "lon": -125.91508833333333,
+      "sog_kn": 3.2,
+      "cog_deg": 172.8,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T19:19:50Z",
+      "lat": 46.58437333333333,
+      "lon": -125.91795,
+      "sog_kn": 4.3,
+      "cog_deg": 185.7,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T19:22:47Z",
+      "lat": 46.58113,
+      "lon": -125.918825,
+      "sog_kn": 4.1,
+      "cog_deg": 195.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T20:17:47Z",
+      "lat": 46.50768333333333,
+      "lon": -125.92772166666667,
+      "sog_kn": 4.5,
+      "cog_deg": 188.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T20:20:47Z",
+      "lat": 46.503475,
+      "lon": -125.92908333333334,
+      "sog_kn": 5.6,
+      "cog_deg": 188.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T20:37:47Z",
+      "lat": 46.47797166666667,
+      "lon": -125.942325,
+      "sog_kn": 6.3,
+      "cog_deg": 202.7,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T20:55:48Z",
+      "lat": 46.45075166666667,
+      "lon": -125.95897666666667,
+      "sog_kn": 6.6,
+      "cog_deg": 203.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T21:04:48Z",
+      "lat": 46.436796666666666,
+      "lon": -125.966275,
+      "sog_kn": 7.1,
+      "cog_deg": 190.7,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T21:12:49Z",
+      "lat": 46.42422,
+      "lon": -125.974605,
+      "sog_kn": 5.3,
+      "cog_deg": 221.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T21:24:50Z",
+      "lat": 46.406908333333334,
+      "lon": -125.989185,
+      "sog_kn": 5.1,
+      "cog_deg": 200.3,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T21:43:48Z",
+      "lat": 46.37656666666667,
+      "lon": -125.99808666666667,
+      "sog_kn": 6.3,
+      "cog_deg": 199.8,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T21:53:49Z",
+      "lat": 46.361935,
+      "lon": -126.00203166666667,
+      "sog_kn": 4.3,
+      "cog_deg": 189.3,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T22:22:49Z",
+      "lat": 46.31645833333334,
+      "lon": -126.01095,
+      "sog_kn": 5.8,
+      "cog_deg": 189.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T22:32:18Z",
+      "lat": 46.302545,
+      "lon": -126.017245,
+      "sog_kn": 5.2,
+      "cog_deg": 198.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-04T23:10:47Z",
+      "lat": 46.24765,
+      "lon": -126.03498666666667,
+      "sog_kn": 6.3,
+      "cog_deg": 192.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T02:06:49Z",
+      "lat": 45.995068333333336,
+      "lon": -126.12921666666666,
+      "sog_kn": 5.3,
+      "cog_deg": 186.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T04:10:47Z",
+      "lat": 45.79271333333333,
+      "lon": -126.17559833333334,
+      "sog_kn": 5.0,
+      "cog_deg": 183.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T04:26:20Z",
+      "lat": 45.769635,
+      "lon": -126.17614333333333,
+      "sog_kn": 4.6,
+      "cog_deg": 190.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T04:32:49Z",
+      "lat": 45.75958166666667,
+      "lon": -126.18084,
+      "sog_kn": 6.7,
+      "cog_deg": 202.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T04:42:49Z",
+      "lat": 45.74460666666667,
+      "lon": -126.190495,
+      "sog_kn": 5.7,
+      "cog_deg": 192.4,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T05:30:49Z",
+      "lat": 45.670676666666665,
+      "lon": -126.207015,
+      "sog_kn": 4.5,
+      "cog_deg": 200.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T05:41:49Z",
+      "lat": 45.6552,
+      "lon": -126.210455,
+      "sog_kn": 6.3,
+      "cog_deg": 184.4,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T05:58:18Z",
+      "lat": 45.632263333333334,
+      "lon": -126.21712,
+      "sog_kn": 4.0,
+      "cog_deg": 196.0,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T06:01:20Z",
+      "lat": 45.62806166666667,
+      "lon": -126.219085,
+      "sog_kn": 5.1,
+      "cog_deg": 172.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T06:48:46Z",
+      "lat": 45.55300166666667,
+      "lon": -126.23790833333334,
+      "sog_kn": 6.1,
+      "cog_deg": 202.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T06:57:46Z",
+      "lat": 45.53870166666667,
+      "lon": -126.24057,
+      "sog_kn": 5.6,
+      "cog_deg": 176.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T07:09:48Z",
+      "lat": 45.518965,
+      "lon": -126.24343333333333,
+      "sog_kn": 6.4,
+      "cog_deg": 190.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T07:10:48Z",
+      "lat": 45.51738666666667,
+      "lon": -126.24373833333334,
+      "sog_kn": 5.7,
+      "cog_deg": 189.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T07:52:50Z",
+      "lat": 45.45081,
+      "lon": -126.26183166666667,
+      "sog_kn": 6.9,
+      "cog_deg": 200.7,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T08:12:47Z",
+      "lat": 45.42035666666666,
+      "lon": -126.274865,
+      "sog_kn": 5.3,
+      "cog_deg": 203.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T08:20:49Z",
+      "lat": 45.408296666666665,
+      "lon": -126.27913833333334,
+      "sog_kn": 7.1,
+      "cog_deg": 199.8,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T08:30:18Z",
+      "lat": 45.393051666666665,
+      "lon": -126.28563833333334,
+      "sog_kn": 7.7,
+      "cog_deg": 183.4,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T08:40:49Z",
+      "lat": 45.37690833333333,
+      "lon": -126.28906333333333,
+      "sog_kn": 5.0,
+      "cog_deg": 195.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T08:50:46Z",
+      "lat": 45.36276,
+      "lon": -126.29744666666667,
+      "sog_kn": 6.3,
+      "cog_deg": 206.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T09:00:48Z",
+      "lat": 45.347925,
+      "lon": -126.30583666666666,
+      "sog_kn": 5.9,
+      "cog_deg": 189.8,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T09:15:46Z",
+      "lat": 45.32529,
+      "lon": -126.31313333333334,
+      "sog_kn": 4.8,
+      "cog_deg": 186.6,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T09:28:49Z",
+      "lat": 45.30636666666667,
+      "lon": -126.31898333333334,
+      "sog_kn": 5.0,
+      "cog_deg": 207.4,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T09:54:47Z",
+      "lat": 45.26804166666667,
+      "lon": -126.33494333333333,
+      "sog_kn": 5.7,
+      "cog_deg": 202.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T10:02:48Z",
+      "lat": 45.2558,
+      "lon": -126.34081833333333,
+      "sog_kn": 4.8,
+      "cog_deg": 203.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T10:13:49Z",
+      "lat": 45.24011333333333,
+      "lon": -126.35020666666667,
+      "sog_kn": 4.6,
+      "cog_deg": 202.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T10:56:48Z",
+      "lat": 45.178066666666666,
+      "lon": -126.37806,
+      "sog_kn": 6.4,
+      "cog_deg": 189.1,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T11:01:48Z",
+      "lat": 45.170895,
+      "lon": -126.37921833333333,
+      "sog_kn": 5.6,
+      "cog_deg": 179.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T11:28:50Z",
+      "lat": 45.13648333333333,
+      "lon": -126.39855333333334,
+      "sog_kn": 5.0,
+      "cog_deg": 211.9,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T11:30:49Z",
+      "lat": 45.13414,
+      "lon": -126.40045,
+      "sog_kn": 4.8,
+      "cog_deg": 201.7,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T11:42:49Z",
+      "lat": 45.118435,
+      "lon": -126.40661666666666,
+      "sog_kn": 5.9,
+      "cog_deg": 189.5,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    },
+    {
+      "observed_at_utc": "2026-10-05T13:05:49Z",
+      "lat": 44.996633333333335,
+      "lon": -126.44594333333333,
+      "sog_kn": 6.7,
+      "cog_deg": 204.2,
+      "source": "Open Waters AIS",
+      "mmsi": "368448560",
+      "callsign": "WDQ6966"
+    }
+  ],
   "observations_without_coordinates": [
-    {"observed_at_utc_estimated":"2026-10-05T06:12:18Z","notification_sent_at_utc":"2026-10-05T06:13:18Z","report_age_minutes_at_notification":1,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: AIS update confirms Phoenix Do Mar identity and position"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T11:50:58Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New AIS position confirmed for Phoenix Do Mar"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T07:47:55Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New AIS position for Phoenix Do Mar"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T02:45:07Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position reported"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T03:40:03Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position update"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-04T21:49:26Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"public AIS sources","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS identity verified with fresh position"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":"2026-10-05T08:34:17Z","report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":null,"cog_deg":null,"source":"VesselFinder","position_quality":"email-derived; coordinates not recoverable from notification","email_subject":"[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS update verified"},
-    {"observed_at_utc_estimated":"2026-10-04T15:47:00Z","notification_sent_at_utc":null,"report_age_minutes_at_notification":null,"lat":null,"lon":null,"sog_kn":5.3,"cog_deg":209.9,"source":"PredictWind Phoenix Do Mar tracker","position_quality":"public tracker observation; exact timestamp/speed/course, coordinates not exposed in indexed result"},
-    {"observed_at_utc_estimated":null,"notification_sent_at_utc":null,"report_age_minutes_at_notification":40,"lat":null,"lon":null,"sog_kn":5.1,"cog_deg":172.0,"source":"976-TUNA AIS","position_quality":"current public AIS observation; relative timestamp only, coordinates not exposed in indexed result"}
+    {
+      "observed_at_utc_estimated": "2026-10-05T06:12:18Z",
+      "notification_sent_at_utc": "2026-10-05T06:13:18Z",
+      "report_age_minutes_at_notification": 1,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: AIS update confirms Phoenix Do Mar identity and position"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-05T11:50:58Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: New AIS position confirmed for Phoenix Do Mar"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-05T07:47:55Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: New AIS position for Phoenix Do Mar"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-05T02:45:07Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position reported"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-05T03:40:03Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: New Phoenix Do Mar AIS position update"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-04T21:49:26Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "public AIS sources",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS identity verified with fresh position"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": "2026-10-05T08:34:17Z",
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": null,
+      "cog_deg": null,
+      "source": "VesselFinder",
+      "position_quality": "email-derived; coordinates not recoverable from notification",
+      "email_subject": "[Task Update] Phoenix AIS Watch: Phoenix Do Mar AIS update verified"
+    },
+    {
+      "observed_at_utc_estimated": "2026-10-04T15:47:00Z",
+      "notification_sent_at_utc": null,
+      "report_age_minutes_at_notification": null,
+      "lat": null,
+      "lon": null,
+      "sog_kn": 5.3,
+      "cog_deg": 209.9,
+      "source": "PredictWind Phoenix Do Mar tracker",
+      "position_quality": "public tracker observation; exact timestamp/speed/course, coordinates not exposed in indexed result"
+    },
+    {
+      "observed_at_utc_estimated": null,
+      "notification_sent_at_utc": null,
+      "report_age_minutes_at_notification": 40,
+      "lat": null,
+      "lon": null,
+      "sog_kn": 5.1,
+      "cog_deg": 172.0,
+      "source": "976-TUNA AIS",
+      "position_quality": "current public AIS observation; relative timestamp only, coordinates not exposed in indexed result"
+    }
   ],
   "notes": [
     "track_points intentionally contains no fabricated coordinates.",
