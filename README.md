@@ -9,89 +9,54 @@ Public AIS track-history data for **PHOENIX DO MAR**, the sailing vessel associa
 - **Callsign:** WDQ6966
 - **Flag:** United States
 
-The identity above has been corroborated from public AIS sources. The repository deliberately distinguishes verified AIS data from observations that do not contain enough information to become geographic track points.
+The repository deliberately distinguishes coordinate-bearing AIS observations from reports that do not contain enough information to become geographic track points.
 
 ## Purpose
 
-Public AIS websites often expose only a vessel's latest position or a limited amount of track history. This repository provides a small, persistent data store for accumulating reliable PHOENIX DO MAR position reports over time.
+Public AIS services can expose only limited track history. This repository provides a persistent data store for accumulating reliable PHOENIX DO MAR position reports over time.
 
-The resulting history is intended to be consumed by **Mauri's Weather & Water Conditions / pittsburg-saildata**, where it can be rendered as a longer historical vessel track on the sailing map.
+The resulting history is intended to be consumed by **Mauri's Weather & Water Conditions / pittsburg-saildata**, where it can be rendered as a longer historical vessel track.
 
-## Architecture
+## Automated collection
+
+Collection is controlled by this repository itself using GitHub Actions.
 
 ```text
-Reliable public AIS sources
-          |
-          v
-ChatGPT Phoenix AIS Track Watch
-(hourly condition watch)
-          |
-          | verified coordinate-bearing observations only
-          v
-phoenix-ais-data GitHub repository
-          |
-          | phoenix-do-mar-track.json
-          v
-Render-hosted Go service
-          |
-          | HTTPS / cached proxy endpoint
-          v
-pittsburg-saildata / Leaflet sailing map
+Open Waters AIS
+      |
+      v
+.github/workflows/collect-phoenix-ais.yml
+      |
+      v
+scripts/collect_phoenix_ais.py
+      |
+      | verified coordinate-bearing observations only
+      v
+phoenix-do-mar-track.json
+      |
+      v
+pittsburg-saildata / Leaflet map
 ```
 
-The data repository is intentionally separate from the application source repository. The AIS collection process therefore does not need write access to the production `pittsburg-saildata` repository.
+The workflow runs hourly and can also be started manually from the repository's **Actions** tab. The collector requests the Open Waters track for MMSI `368448560`, examines every returned observation, deduplicates it against the archive, and commits the JSON only when new coordinate-bearing points are found.
+
+The workflow uses GitHub's repository-scoped `GITHUB_TOKEN` with `contents: write`. No separate personal access token is required.
 
 ## Collection rules
 
-The Phoenix AIS Track Watch checks reliable public AIS sources hourly.
+A report is eligible for `track_points` only when the source supplies an actual observation timestamp and valid latitude/longitude coordinates.
 
-A report is eligible for `track_points` only when the source exposes a real coordinate-bearing observation. A track point should contain, when available:
+When supplied by the source, the collector also preserves speed over ground (SOG) and course over ground (COG). Missing optional SOG/COG values are stored as `null`.
 
-- AIS observation timestamp in UTC
-- latitude
-- longitude
-- speed over ground (SOG), knots
-- course over ground (COG), degrees
-- source
-- MMSI and callsign
+Coordinates, timestamps, course, speed, or other navigation values are **never inferred, interpolated, geocoded, or fabricated** to fill gaps.
 
-The AIS observation time must be kept separate from the time the monitoring process discovers or collects the report.
-
-Coordinates, timestamps, course, or other navigation values must **never be inferred, interpolated, geocoded, or fabricated** merely to fill gaps.
-
-A report containing only a speed, course, or relative statement such as “position received 10 minutes ago” is not sufficient to create a geographic track point.
-
-Duplicate observations should not be appended.
+Duplicate observations are not appended. Existing observations and `observations_without_coordinates` are preserved.
 
 ## JSON data model
 
-The primary asset is:
+The primary asset is `phoenix-do-mar-track.json`.
 
-```text
-phoenix-do-mar-track.json
-```
-
-At a high level it contains:
-
-```json
-{
-  "schema_version": 1,
-  "vessel": {
-    "name": "PHOENIX DO MAR",
-    "mmsi": "368448560",
-    "callsign": "WDQ6966",
-    "flag": "US"
-  },
-  "track_points": [],
-  "observations_without_coordinates": []
-}
-```
-
-### `track_points`
-
-This is the authoritative geographic track. Entries belong here only when actual latitude and longitude have been obtained from a reliable source.
-
-A typical future entry will look like:
+A coordinate-bearing entry has this form:
 
 ```json
 {
@@ -100,63 +65,38 @@ A typical future entry will look like:
   "lon": -123.000000,
   "sog_kn": 6.2,
   "cog_deg": 210.0,
-  "source": "AIS source",
+  "source": "Open Waters AIS",
   "mmsi": "368448560",
   "callsign": "WDQ6966"
 }
 ```
 
-The coordinates above are illustrative only and are **not** an actual PHOENIX DO MAR observation.
+The coordinates in this example are illustrative only and are not an actual PHOENIX DO MAR observation.
+
+### `track_points`
+
+This is the authoritative geographic track. Entries belong here only when actual latitude and longitude plus an observation timestamp have been obtained from a reliable source.
 
 ### `observations_without_coordinates`
 
-This section preserves useful historical evidence that cannot safely be plotted. Examples include ChatGPT AIS notifications that reported a new speed or report age but did not expose the underlying latitude and longitude.
+This section preserves historical evidence that cannot safely be plotted. It is not converted into geographic track points unless trustworthy coordinates and timestamps later become available.
 
-Keeping these observations allows later reconciliation if trustworthy historical coordinates become available.
+## Files controlling collection
 
-## Runtime integration
+- `.github/workflows/collect-phoenix-ais.yml` — hourly schedule, repository permissions, and commit step.
+- `scripts/collect_phoenix_ais.py` — Open Waters retrieval, validation, deduplication, and JSON update logic.
+- `phoenix-do-mar-track.json` — persistent AIS history.
 
-The intended application architecture is for the Render-hosted Go service to retrieve the raw JSON asset from this public repository over HTTPS.
-
-Rather than having browser-side Leaflet code depend directly on GitHub, the Go service can expose an application endpoint such as:
-
-```text
-/api/phoenix-track
-```
-
-The Go service can periodically refresh and cache the GitHub JSON. The map then requests the local API endpoint and renders `track_points` as a Leaflet polyline.
-
-Caching also allows the service to continue serving the last successfully retrieved track if GitHub is temporarily unavailable.
+Because these files live in GitHub, the collector is under the same version control as its data. Its behavior can be inspected, changed, disabled, or rolled back from the repository.
 
 ## Security boundary
 
-This repository is intentionally data-only.
+The collector has write permission only in **phoenix-ais-data** through the workflow's repository token. It does not require write access to the production `pittsburg-saildata` repository.
 
-The desired permissions model is:
-
-```text
-AIS collection process
-    -> write access to phoenix-ais-data only
-
-Render service
-    -> public read-only HTTPS access to phoenix-ais-data
-
-pittsburg-saildata
-    -> no AIS collector write access required
-```
-
-This isolates automated AIS data collection from the production application's source code.
-
-## Current status
-
-The initial JSON was created from seven Phoenix AIS Watch notification emails plus publicly available corroborating observations.
-
-Those historical notifications did not expose trustworthy latitude/longitude coordinates, so no coordinates were manufactured from them. Consequently the initial `track_points` array is intentionally empty.
-
-The collection system is designed to populate that array only as reliable coordinate-bearing observations become available.
+The production application can consume this public repository read-only.
 
 ## Data-quality principle
 
 **No position is better than a false position.**
 
-The purpose of this repository is to build a defensible vessel track. Missing history is therefore retained as missing rather than being filled through estimation.
+Missing history remains missing rather than being filled through estimation.
